@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+      >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/scanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Scant"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:background="@drawable/btn_blue"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowColor="#FF0000"
+                android:shadowRadius="2"/>
+
+            <EditText
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/hint_search" />
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/productListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1">
+
+        </ListView>
+        <Button
+            android:id="@+id/addProductButton"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_test"
+            android:ems="10"
+            android:text="@string/add_new_product"
+             />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

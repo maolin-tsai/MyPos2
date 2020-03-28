@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/spinner_report"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/previousButton"
+                style="@style/ButtonText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_yellow"
+                android:text="@string/previous"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/currentBox"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/nextButton"
+                style="@style/ButtonText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_yellow"
+                android:text="@string/next"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_weight="0.2"
+                android:background="#FFFFFF"
+                android:paddingLeft="1dip"
+                android:paddingTop="1dip"
+                android:paddingBottom="1dip">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#33B5E5"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+                    android:text="@string/id"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_weight="0.4"
+                android:background="#FFFFFF"
+                android:paddingLeft="1dip"
+                android:paddingTop="1dip"
+                android:paddingBottom="1dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#33B5E5"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+                    android:text="@string/date"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_weight="0.4"
+                android:background="#FFFFFF"
+                android:paddingLeft="1dip"
+                android:paddingTop="1dip"
+                android:paddingBottom="1dip">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#33B5E5"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+                    android:text="@string/total"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="4.96"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/saleListView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="#FFFFFF"
+                android:paddingBottom="1dip"
+                android:paddingLeft="1dip">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#33B5E5"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+                    android:text="@string/total"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dip"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="#FFFFFF"
+                android:paddingBottom="1dip"
+                android:paddingLeft="1dip"
+                >
+
+                <TextView
+                    android:id="@+id/totalBox"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#33B5E5"
+                    android:gravity="center"
+                    android:paddingRight="3dp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
